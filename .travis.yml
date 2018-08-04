@@ -1,14 +1,16 @@
 language: node_js
 node_js:
-  - "7"
-  - "8"
-  - "9"
-
+- '7'
+- '8'
+- '9'
 install:
 - npm install
-
 script:
 - npm test
-
 deploy:
-- npm publish
+  provider: npm
+  email: contact@ymammar.com
+  api_key:
+    secure: anwFkNFMmJ2T/YEfJTunIEbLyf39oO3rxwGl8esB91ousFdJTWxP95C0i8yuQg8VuXFKPySDoeOWMdLTgyh7bNTqdUb9yABqL62UZ8P0sTY2sS1Iy7SxIY3PGuM+/9gbGegLrZdyWbKSxG+Ax4WyuOP+kfHEfObPk8bs8VoFWFMifGIQV0f6HmZWHuZyXqf0TTzmENQ8pM2lXfQ3L493x3EsLNLbR9/jcwMXfBvN98uHjggQlCzKJ94EPxZll2goVAFuzFHcXGchzG/jTSSWNEi48+dEW/wnj1qR507Ozeols1AMnPBbiDTS/rfhmxq0infXFb3PjPdnwLTofmt/B6FKx5nS9O2h6hp7X9rB0y8uMoaeHwgoDk0th5YxEnq0Yk2jy9X601neajvEFwjcAKpXdPhJh1yrVBsTQZhNb63/7tSQ3ujgiYGjxR4jt4U0ThvUHJtWMia62MKjzIt4XCl5GwDeeH4vuRaL/bRzrR8z5WsbSnuLEqWM/yPOXOAnZZ+erBVFT7wIRwQ+f8SKkPlh6rU+ZOmS4nArbp+TvmKlp7EOHdK6on9ocjMAKct+BeVSIignU64l4RXI0m1bkXUcWCFRuVbXbhKh33Y67njEnoeeZaLlzCjwqaZ9MzIW/zS58Y8xpxK1SsFfXl3urDLSBo832rrCH4rRhS/V/3g=
+  on:
+    tags: true
