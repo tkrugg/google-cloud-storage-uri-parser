@@ -1,13 +1,16 @@
 {
     "name": "google-cloud-storage-uri-parser",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "A URI parser for google cloud storage file",
     "main": "index.js",
     "scripts": {
         "test": "jest **/*.test.js"
     },
     "keywords": [
-      "google-cloud-storage", "cloud-storage", "uri", "bucket"
+        "google-cloud-storage",
+        "cloud-storage",
+        "uri",
+        "bucket"
     ],
     "author": "Youcef Mammar",
     "license": "MIT",
