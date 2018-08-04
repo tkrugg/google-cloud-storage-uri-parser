@@ -1,6 +1,6 @@
 {
     "name": "google-cloud-storage-uri-parser",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A URI parser for google cloud storage file",
     "main": "index.js",
     "scripts": {
