@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parse should produce the right bucket and file names for gs://my-bucket_with/myfolder/myfile.json 1`] = `
+Object {
+  "bucket": "my-bucket_with",
+  "file": "myfolder/myfile.json",
+  "uri": "gs://my-bucket_with/myfolder/myfile.json",
+}
+`;
+
+exports[`parse should produce the right bucket and file names for gs://mybucket/myfile.json 1`] = `
+Object {
+  "bucket": "mybucket",
+  "file": "myfile.json",
+  "uri": "gs://mybucket/myfile.json",
+}
+`;
